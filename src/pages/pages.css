@@ -1,0 +1,54 @@
+.full_editor_wraper{
+    box-sizing: border-box;
+}
+ul{
+    width:100%;
+    background:#042f5a;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start:0;
+}
+.btn{
+    outline: none;
+    border: none;
+    cursor:pointer;
+    margin: .3em .4em;
+    padding:.3em .5em;
+    border-radius: 3px;
+    font-size:calc(10px + .3rem);
+    font-weight: bold;
+    color:#1f3377;
+}
+
+.run_btn{
+    margin-left: 1.2em;
+}
+.btn:active{
+    filter:invert(50);    
+}
+
+li{
+    list-style: none;
+}
+
+.cm-gutters{
+    height: 0;
+}
+.editor_wrapper{
+    box-sizing: border-box;
+    border:2px solid #042f5a;
+    background-color:#fce7f2;
+    color:rgb(3, 1, 23);
+    height:80vh;
+    width:100%;
+    overflow:auto;
+    font-size: 14px;
+}
+.cm-editor{
+    height:100%;
+}
+body::-webkit-scrollbar,
+.editor_wrapper::-webkit-scrollbar,
+.cm-scroller::-webkit-scrollbar{
+    width: 0;
+}

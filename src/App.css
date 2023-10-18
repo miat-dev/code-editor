@@ -1,5 +1,5 @@
 .App {
-  background-color: #476fc0;
+  background-color: rosybrown;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,12 +22,12 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
-.wp .otherhead div{
+.wp .otherhead > div{
   display: flex;
   flex-direction: column;
   
 }
-.wp,.wp div,.wp div div{
+.wp,.wp> div,.wp> div >div{
   padding: 0px;
   border:0px dashed rosybrown;
 }

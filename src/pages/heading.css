@@ -7,7 +7,7 @@
 .heading { 
   width: 100%;
     background-color: #34222e;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: aliceblue;
     text-align: center;
   
@@ -15,20 +15,31 @@
 .heading #h_upper{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content:space-evenly;
+  justify-content:space-around;
 }
-
+.btn_ham{
+  display:flex;
+  justify-content: right;
+  position: relative;
+}
 .heading .menu{
   display: none;
   width: 100%;
   flex-direction: column;
   align-self: center;
+  position: absolute;
   background-color:#35343f;
-  border-top: 3px dashed #34222e;
-  
+  top:50%;
+  width:auto;
+  right:calc( 5vw + 30px);
+  border-radius: 4px;
+  /* border-top: 3px dashed #34222e; */
+}
+.heading .menu a:hover{
+  background-color:#3329a6;
 }
 a{   
-    margin: 1em ;
+    padding: .6em 1.2em ;
     color: aliceblue;
     text-decoration: none;
 }
@@ -98,16 +109,11 @@ div h2{
     }
   }
 @media only screen and (min-width:764px){
-    .heading{
-      display: grid;
-      grid-template-columns: 11fr 9fr;
-      border:4px solid rgb(48, 114, 212);
-    }
     .heading .menu{
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
+      display:flex;
       background-color:transparent;
-      border-top: none;
+      flex-direction: row;
+      top:0;
      }
      .heading  .menu a{
         margin: 1rem;
